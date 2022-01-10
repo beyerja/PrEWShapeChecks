@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Local modules
-import CSVMetadataReader as CMR
+import IO.CSVMetadataReader as CMR
 
 # ------------------------------------------------------------------------------
 

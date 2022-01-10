@@ -14,8 +14,7 @@ from scipy.optimize import curve_fit
 import sys
 
 # Local packages
-sys.path.append("../FuncHelp")
-import Wrappers as FHW
+import FuncHelp.Wrappers as FHW
 
 # ------------------------------------------------------------------------------
 
