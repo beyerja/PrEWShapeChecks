@@ -8,10 +8,12 @@ sys.path.append("../PrEWInputAnalysis")
 import FuncHelp.Wrappers as FHW
 import IO.Reader as IOR
 import IO.SysHelpers as IOSH
+import Plotting.DefaultFormat as PDF
 import Shape.ShapeFunctions as SSF
 import Shape.ShapeTesting as SST
 
 log.basicConfig(level=log.INFO) # Set logging level
+PDF.set_default_mpl_format()
 MCLumi = 5000 # MC Statistics is 5ab^-1
 
 input_dir = "/home/jakob/DESY/MountPoints/DUST/TGCAnalysis/SampleProduction/NewMCProduction/2f_Z_l/PrEWInput/MuAcc_costheta_0.9925"
