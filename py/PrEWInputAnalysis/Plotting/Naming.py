@@ -38,7 +38,7 @@ def sign_str(num, spelled=False):
     else:
       return "-"
   
-def process_str(chirality, mu_charge):
+def WW_process_str(chirality, mu_charge):
   """ Return the latex math string that describes the semilept. WW process with
       the given chirality and muon charge.
   """
