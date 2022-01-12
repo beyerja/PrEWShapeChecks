@@ -59,9 +59,10 @@ def create_2D_projection_plot(x, y, xmin, xmax, nbins, angles, base_name,
   ax3.set_ylim((xmin[2],xmax[2]))
 
   # Create small white lines between the plots
-  for side in ['top','right']:
-    ax2.spines[side].set_linewidth(3)
-    ax2.spines[side].set_color('white')
+  for ax_line in (ax2.spines['top'],ax2.spines['right'],ax1.spines['bottom'],
+                  ax3.spines['left']):
+    ax_line.set_linewidth(3)
+    ax_line.set_color('white')
 
   # Proper labelling of the axes
   label_args = {"fontsize":30, "ha":'center'}
