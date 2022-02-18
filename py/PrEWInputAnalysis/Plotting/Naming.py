@@ -101,5 +101,10 @@ def observable_str(obs_name, process):
       return "\\phi_l^*"
     else:
       raise Exception("Unknown WW observable {}".format(obs_name))
+  if process == "mumu":
+    if obs_name == "costh_f_star":
+      return "\\cos\\theta_{\\mu}^*"
+    else:
+      raise Exception("Unknown mumu observable {}".format(obs_name))
   else:
     raise Exception("Unknown process {}".format(process))
