@@ -114,7 +114,7 @@ def create_1D_projection_plot(i_coord, x, y, xmin, xmax, nbins, angles,
   # Useful labels
   angle = angles[i_coord]
   ax.set_xlabel("${}$".format(PN.observable_str(angle, "WW")))
-  ax.set_ylabel("$d\\sigma [$fb$^{{-1}}]$")
+  ax.set_ylabel("$d\\sigma [$fb$]$")
   
   # Mark which process it is
   chirality = IOFH.find_chirality(base_name)
