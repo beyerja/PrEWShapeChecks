@@ -72,7 +72,7 @@ def create_2D_projection_plot(x, y, xmin, xmax, nbins, angles, base_name,
 
   # Add a colorbar
   # cbar_title = "$\\frac{d^2\\sigma}{dx_1dx_2} [$fb$^{{-1}}]$"
-  cbar_title = "$d\\sigma [$fb$^{{-1}}]$"
+  cbar_title = "$d\\sigma [$fb$]$"
   ax_whole = fig.add_subplot(1,6,5, visible=False)
   fig.colorbar(h1[-1], ax=ax_whole, label=cbar_title, fraction=1.0)
   # ax_whole.text(0.5, 0.65, "$d\\sigma [$fb$^{{-1}}]$", 

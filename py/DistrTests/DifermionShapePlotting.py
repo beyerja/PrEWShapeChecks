@@ -47,7 +47,7 @@ def plot_mumu_distr(infile, outdir, out_formats=["pdf","png"]):
   
   # Useful labels
   ax.set_xlabel("${}$".format(PN.observable_str(x_name, "mumu")))
-  ax.set_ylabel("$d\\sigma [$fb$^{{-1}}]$")
+  ax.set_ylabel("$d\\sigma [$fb$]$")
   
   # Mark which process it is
   chirality = IOFH.find_chirality(base_name)
